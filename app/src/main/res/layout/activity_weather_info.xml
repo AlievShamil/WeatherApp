@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".WeatherInfoActivity">
+
+    <TextView
+        android:id="@+id/textViewDegree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="58dp"
+        android:text="@string/degree"
+        android:textColor="@color/colorDegree"
+        android:textSize="64sp"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewDegree"
+        android:layout_centerVertical="true"
+        android:text="@string/moscow"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/textViewDegree"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp" />
+
+    <TextView
+        android:id="@+id/tvWeatherCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewDegree"
+        android:layout_below="@+id/tv_city"
+        android:text="@string/sunny"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhetherCondition"
+        android:layout_alignLeft="@+id/textViewDegree"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imageViewSun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/sunny"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="33dp" />
+
+    <TextView
+        android:id="@+id/tv_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_city"
+        android:layout_alignRight="@+id/tv_city"
+        android:layout_below="@+id/tv_city"
+        android:text="Давление 748 мм рт. ст"
+        android:textColor="@color/colorWhetherCondition"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewDegree"
+        android:layout_alignStart="@+id/textViewDegree"
+        android:layout_below="@+id/tvWeatherCondition"
+        android:text="Ветер 3 м/с"
+        android:textColor="@color/colorWhetherCondition"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_city"
+        android:layout_alignRight="@+id/tv_city"
+        android:layout_below="@+id/tv_pressure"
+        android:text="Влажность 64%"
+        android:textColor="@color/colorWhetherCondition"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible" />
+</RelativeLayout>

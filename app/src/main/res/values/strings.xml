@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="weather">Погода</string>
+    <string name="sunny">Солнечно</string>
+    <string name="moscow">Москва</string>
+    <string name="degree">30°C</string>
+</resources>
